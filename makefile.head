@@ -1,0 +1,14 @@
+CC=gcc
+DIR=dir
+OBJ_DIR=obj
+BIN_DIR=.
+BIN_NAME=sample_window
+TARGET=$(BIN_DIR)/$(BIN_NAME)
+SRC=$(wildcard *.c)
+OBJ_FILES=$(SRC:%.c=$(OBJ_DIR)/%.o)
+
+
+CFLAGS=-g 
+
+LIBS= -lX11
+LDFLAGS=
